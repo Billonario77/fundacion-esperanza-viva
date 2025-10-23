@@ -3,76 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <img src="assets/logo.png" alt="Logo Fundación" />
   <title>Fundación Esperanza Viva</title>
+  <meta name="description" content="Fundación Esperanza Viva trabaja por el bienestar de comunidades vulnerables en Colombia. Conoce nuestra misión, proyectos y cómo puedes apoyar." />
+  <meta name="keywords" content="fundación, Colombia, ayuda social, donaciones, ONG, transparencia" />
+  <meta name="author" content="Fundación Esperanza Viva" />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <nav class="container">
-      <h1>Esperanza Viva</h1>
-      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
+    <div class="logo-titulo">
+      <img src="assets/logo.png" alt="Logo Fundación" />
+      <h1>Fundación Esperanza Viva</h1>
+    </div>
+    <nav>
+      <ul>
         <li><a href="#quienes">Quiénes Somos</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
-        <li><a href="#donar" class="donar-btn">Donar</a></li>
+        <li><a href="#transparencia">Transparencia</a></li>
+        <li><a href="#donaciones">Donaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h2>Transforma vidas con tu apoyo</h2>
-        <p>Juntos podemos construir un futuro más justo y solidario.</p>
-        <a href="#donar" class="cta">Dona Ahora</a>
-      </div>
+    <section id="quienes">
+      <h2>Nuestra Misión</h2>
+      <p>Trabajamos por el bienestar de comunidades vulnerables en Colombia, promoviendo educación, salud y desarrollo sostenible. Nuestra labor se basa en la transparencia, el compromiso social y el respeto por los derechos humanos.</p>
     </section>
 
-    <section id="quienes" class="container">
-      <h2>Quiénes Somos</h2>
-      <p>Somos una organización dedicada a mejorar la calidad de vida de comunidades vulnerables en Colombia.</p>
+    <section id="transparencia">
+      <h2>Transparencia</h2>
+      <p>Publicamos nuestras resoluciones, informes financieros y certificaciones legales. Puedes consultar nuestros documentos oficiales en el siguiente enlace:</p>
+      <a href="https://www.crcom.gov.co/" target="_blank">Consulta CRC y resoluciones legales</a>
     </section>
 
-    <section id="faq" class="container">
-      <h2>Preguntas Frecuentes</h2>
-      <ul>
-        <li><strong>¿Cómo puedo donar?</strong> Puedes hacerlo en línea a través de nuestros botones seguros.</li>
-        <li><strong>¿Dónde va mi dinero?</strong> A proyectos educativos, alimentarios y de salud.</li>
-      </ul>
+    <section id="donaciones">
+      <h2>Apóyanos</h2>
+      <p>Tu aporte transforma vidas. Puedes donar vía PayU, MercadoPago o transferencia bancaria. Pronto habilitaremos los botones de pago seguros.</p>
+      <button disabled>Donar Ahora (Próximamente)</button>
     </section>
 
-    <section id="blog" class="container">
-      <h2>Blog</h2>
-      <p>Lee historias reales de impacto y transformación.</p>
-    </section>
-
-    <section id="contacto" class="container">
+    <section id="contacto">
       <h2>Contáctanos</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
+      <p>Correo: contacto@esperanzaviva.org<br />Teléfono: +57 300 123 4567</p>
+      <form action="mailto:contacto@esperanzaviva.org" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Tu correo" required />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
         <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
- <footer>
-  <p>&copy; 2025 Fundación Esperanza Viva. Todos los derechos reservados.</p>
-  <a href="privacidad.html">Política de privacidad</a> |
-  <a href="terminos.html">Términos y condiciones</a>
-</footer>
-
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 Fundación Esperanza Viva. Todos los derechos reservados.</p>
+    <p>Registro legal en Colombia. Cumplimos con la normativa de la CRC y la Superintendencia de Industria y Comercio.</p>
+    <a href="#">Política de privacidad</a> |
+    <a href="#">Términos y condiciones</a>
+  </footer>
 </body>
 </html>
