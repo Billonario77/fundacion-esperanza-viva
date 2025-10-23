@@ -1,7 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f9f9f9;
   color: #333;
 }
@@ -10,6 +9,9 @@ header {
   background-color: #004080;
   color: white;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-titulo {
@@ -23,12 +25,23 @@ header {
   height: auto;
 }
 
+nav {
+  margin-top: 10px;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   padding: 0;
-  margin-top: 10px;
 }
 
 nav a {
@@ -50,7 +63,6 @@ h2 {
 }
 
 form input, form textarea {
-  display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 10px;
@@ -67,14 +79,25 @@ form button {
   cursor: pointer;
 }
 
-form button:disabled {
-  background-color: #999;
-  cursor: not-allowed;
-}
-
 footer {
   background-color: #eee;
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
 }
