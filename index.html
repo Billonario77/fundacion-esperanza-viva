@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fundación Esperanza Viva</title>
-  <meta name="description" content="Fundación Esperanza Viva trabaja por el bienestar de comunidades vulnerables en Colombia. Conoce nuestra misión, proyectos y cómo puedes apoyar." />
-  <meta name="keywords" content="fundación, Colombia, ayuda social, donaciones, ONG, transparencia" />
-  <meta name="author" content="Fundación Esperanza Viva" />
+  <meta name="description" content="Fundación Esperanza Viva trabaja por el bienestar de comunidades vulnerables en Colombia." />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
@@ -17,7 +15,8 @@
       <h1>Fundación Esperanza Viva</h1>
     </div>
     <nav>
-      <ul>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
         <li><a href="#quienes">Quiénes Somos</a></li>
         <li><a href="#transparencia">Transparencia</a></li>
         <li><a href="#donaciones">Donaciones</a></li>
@@ -29,24 +28,23 @@
   <main>
     <section id="quienes">
       <h2>Nuestra Misión</h2>
-      <p>Trabajamos por el bienestar de comunidades vulnerables en Colombia, promoviendo educación, salud y desarrollo sostenible. Nuestra labor se basa en la transparencia, el compromiso social y el respeto por los derechos humanos.</p>
+      <p>Promovemos educación, salud y desarrollo sostenible en comunidades vulnerables de Colombia.</p>
     </section>
 
     <section id="transparencia">
       <h2>Transparencia</h2>
-      <p>Publicamos nuestras resoluciones, informes financieros y certificaciones legales. Puedes consultar nuestros documentos oficiales en el siguiente enlace:</p>
-      <a href="https://www.crcom.gov.co/" target="_blank">Consulta CRC y resoluciones legales</a>
+      <p>Consulta nuestras resoluciones y certificaciones legales en la CRC.</p>
+      <a href="https://www.crcom.gov.co/" target="_blank">Ver documentos oficiales</a>
     </section>
 
     <section id="donaciones">
       <h2>Apóyanos</h2>
-      <p>Tu aporte transforma vidas. Puedes donar vía PayU, MercadoPago o transferencia bancaria. Pronto habilitaremos los botones de pago seguros.</p>
-      <button disabled>Donar Ahora (Próximamente)</button>
+      <p>Tu aporte transforma vidas. Donaciones vía PayU, MercadoPago o transferencia (próximamente).</p>
+      <button disabled>Donar Ahora</button>
     </section>
 
     <section id="contacto">
       <h2>Contáctanos</h2>
-      <p>Correo: contacto@esperanzaviva.org<br />Teléfono: +57 300 123 4567</p>
       <form action="mailto:contacto@esperanzaviva.org" method="post" enctype="text/plain">
         <input type="text" name="nombre" placeholder="Tu nombre" required />
         <input type="email" name="correo" placeholder="Tu correo" required />
@@ -58,9 +56,10 @@
 
   <footer>
     <p>&copy; 2025 Fundación Esperanza Viva. Todos los derechos reservados.</p>
-    <p>Registro legal en Colombia. Cumplimos con la normativa de la CRC y la Superintendencia de Industria y Comercio.</p>
     <a href="#">Política de privacidad</a> |
     <a href="#">Términos y condiciones</a>
   </footer>
+
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
