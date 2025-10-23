@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundación Esperanza Viva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1>Esperanza Viva</h1>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes">Quiénes Somos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#donar" class="donar-btn">Donar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Transforma vidas con tu apoyo</h2>
+        <p>Juntos podemos construir un futuro más justo y solidario.</p>
+        <a href="#donar" class="cta">Dona Ahora</a>
+      </div>
+    </section>
+
+    <section id="quienes" class="container">
+      <h2>Quiénes Somos</h2>
+      <p>Somos una organización dedicada a mejorar la calidad de vida de comunidades vulnerables en Colombia.</p>
+    </section>
+
+    <section id="faq" class="container">
+      <h2>Preguntas Frecuentes</h2>
+      <ul>
+        <li><strong>¿Cómo puedo donar?</strong> Puedes hacerlo en línea a través de nuestros botones seguros.</li>
+        <li><strong>¿Dónde va mi dinero?</strong> A proyectos educativos, alimentarios y de salud.</li>
+      </ul>
+    </section>
+
+    <section id="blog" class="container">
+      <h2>Blog</h2>
+      <p>Lee historias reales de impacto y transformación.</p>
+    </section>
+
+    <section id="contacto" class="container">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Fundación Esperanza Viva</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
