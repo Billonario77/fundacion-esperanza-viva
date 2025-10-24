@@ -24,34 +24,62 @@
     </nav>
   </header>
 
-  <main>
-   <section id="quienes">
-  <h2>¿Quiénes Somos?</h2>
-  <p>La Fundación Esperanza Viva es una entidad sin ánimo de lucro que trabaja por el bienestar de comunidades vulnerables en Colombia. Promovemos el desarrollo humano a través de programas sociales, educativos y de salud, con enfoque en equidad, inclusión y dignidad.</p>
-</section>
+ <main>
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Fundación Esperanza Viva</h1>
+      <p>Transformamos vidas en comunidades vulnerables de Colombia</p>
+      <a href="#donaciones" class="btn-principal">Quiero Donar</a>
+    </div>
+  </section>
 
-<section id="mision">
-  <h2>Misión</h2>
-  <p>Proporcionar herramientas y oportunidades para que cada persona pueda alcanzar su máximo potencial, mediante proyectos que fomentan la educación, el emprendimiento, la salud y el fortalecimiento comunitario.</p>
-</section>
+  <section id="quienes" class="seccion">
+    <h2>¿Quiénes Somos?</h2>
+    <div class="contenido">
+      <img src="assets/quienes.jpg" alt="Voluntarios en acción" />
+      <p>Somos una organización sin ánimo de lucro que trabaja por el desarrollo integral de comunidades vulnerables en Colombia. Promovemos la equidad, la educación y el bienestar social a través de programas sostenibles.</p>
+    </div>
+  </section>
 
-<section id="vision">
-  <h2>Visión</h2>
-  <p>Construir una sociedad solidaria y justa, donde cada individuo sea protagonista de su propio desarrollo y contribuya activamente al bienestar colectivo.</p>
-</section>
+  <section id="mision-vision" class="seccion doble">
+    <div>
+      <h2>Misión</h2>
+      <p>Proporcionar herramientas y oportunidades para que cada persona alcance su máximo potencial, mediante proyectos que fomentan la educación, el emprendimiento y la salud.</p>
+    </div>
+    <div>
+      <h2>Visión</h2>
+      <p>Construir una sociedad solidaria y justa, donde cada individuo sea protagonista de su propio desarrollo y contribuya activamente al bienestar colectivo.</p>
+    </div>
+  </section>
 
-<section id="donaciones">
-  <h2>¿Cómo Puedes Ayudar?</h2>
-  <p>Tu aporte transforma vidas. Puedes apoyar nuestros programas de alimentación, educación y salud mediante:</p>
-  <ul>
-    <li>Transferencia bancaria</li>
-    <li>PayU</li>
-    <li>MercadoPago</li>
-  </ul>
-  <p>Pronto activaremos el botón de pago en línea. Mientras tanto, puedes escribirnos a <strong>donaciones@esperanzaviva.org</strong>.</p>
-  <button onclick="window.location.href='mailto:donaciones@esperanzaviva.org'">Quiero Donar</button>
-</section>
-  </main>
+  <section id="transparencia" class="seccion">
+    <h2>Transparencia</h2>
+    <p>Consulta nuestras resoluciones, certificaciones y reportes legales en la CRC.</p>
+    <a href="https://www.crcom.gov.co/" target="_blank" class="btn-secundario">Ver documentos oficiales</a>
+  </section>
+
+  <section id="donaciones" class="seccion">
+    <h2>¿Cómo Puedes Ayudar?</h2>
+    <p>Tu aporte transforma vidas. Puedes donar de forma segura a través de:</p>
+    <ul>
+      <li>Transferencia bancaria</li>
+      <li>PayU</li>
+      <li>MercadoPago</li>
+    </ul>
+    <p>Pronto activaremos el botón de pago en línea. Mientras tanto, puedes escribirnos a <strong>donaciones@esperanzaviva.org</strong>.</p>
+    <a href="mailto:donaciones@esperanzaviva.org" class="btn-principal">Quiero Donar</a>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contáctanos</h2>
+    <form action="mailto:contacto@esperanzaviva.org" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" placeholder="Tu correo" required />
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 Fundación Esperanza Viva. Todos los derechos reservados.</p>
